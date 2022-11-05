@@ -614,6 +614,7 @@ footer .logo {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  margin-top: 20px;
 }
 
 .footer-email {
@@ -621,7 +622,6 @@ footer .logo {
   height: 50px;
 
   padding: 15px 16px;
-  margin-top: 20px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -637,8 +637,7 @@ footer .logo {
   line-height: 30px;
   letter-spacing: 0.06em;
 
-  width: 200px;
-  height: 50px;
+  padding: 8px 28px 8px 28px;
   margin-left: 12px;
 
   color: #ffffff;
@@ -882,7 +881,8 @@ footer .logo {
   border-color: var(--accent-color);
 }
 
-.modal-imput:focus + .input-icon {
+.modal-imput:focus + .input-icon,
+.modal-imput:hover + .input-icon {
   fill: var(--accent-color);
 }
 .modal-label {
@@ -940,8 +940,14 @@ footer .logo {
   letter-spacing: 0.03em;
   display: flex;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 30px;
+}
+
+div.comments {
+  margin-bottom: 20px;
+}
+
+.modal-check {
+  margin-bottom: 30px;
   padding-left: 12px;
 }
 
@@ -985,8 +991,7 @@ footer .logo {
   line-height: 30px;
   letter-spacing: 0.06em;
 
-  width: 200px;
-  height: 50px;
+  padding: 10px 45px 10px 45px;
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
